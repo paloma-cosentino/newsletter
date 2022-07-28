@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    font-size: 62.5%;
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+body{
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+}
+
+/* ======================= PARTE DO TEXTO ======================= */
+.left{
+    max-width: 720px;
+    height: 100vh;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.left header {
+    padding-bottom: 9.2rem;
+}
+.left header img {
+    max-width: 379px;
+    max-height: 90px;
+}
+
+.text {
+    max-width: 64.7rem;
+    max-height: 78.0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    align-items: flex-start;
+    
+    
+}
+.text h1 {
+    color: var(--title-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.text h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.text p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.form {
+    overflow: visible;
+    position: relative;
+    margin-top: 5rem;
+    height: 8.4rem;
+}
+.form p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--form-color);
+    margin-bottom: 1.3rem;
+}
+.form input {
+    width: 75rem;
+    height: 4.8rem;
+    margin: 0;
+    border-radius: 0%;
+    border: none;
+    border-left: var(--title-color) solid 5px;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+}
+.form button {
+    width: 5.2rem;
+    height: 5.2rem;
+    margin: 0;
+    float: left;
+    background-color: var(--bg-button-color);
+    border: var(--bg-button-color) solid;
+
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.moreInfo {
+    margin-top: 5rem;
+    font-size: 1.4rem;
+}
+
+.moreInfo a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* ==================================================================================== */
+
+/* ======================================= PARTE DA IMAGEM LATERAL ============================================= */
+.right {
+    
+    background-image: url(./assets/read_news.jpg);
+    width: 60vw;
+    height: 100vh;
+    background-size: cover;
+}
